@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLDocumentController">
+   <children>
+      <Label layoutX="75.0" layoutY="48.0" text="Are you sure you want to exit?" />
+      <Button fx:id="closeButton" layoutX="43.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="65.0" text="Yes" />
+      <Button layoutX="247.0" layoutY="132.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="57.0" text="No" />
+   </children>
+</Pane>

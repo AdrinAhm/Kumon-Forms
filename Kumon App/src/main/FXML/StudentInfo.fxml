@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.FXMLDocumentController">
+  <children>
+    <ScrollPane prefHeight="589.0" prefWidth="800.0">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="801.0">
+          <children>
+            <TableView fx:id="tableView" prefHeight="600.0" prefWidth="783.0">
+              <columns>
+                <TableColumn prefWidth="154.0" text="First Name" fx:id="firstNameColumn" />
+                <TableColumn prefWidth="185.0" text="Last Name" fx:id="lastNameColumn" />
+                <TableColumn prefWidth="314.0" text="BirthDay" fx:id="birthdayColumn" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+    <Button fx:id="ExcelExport" layoutX="721.0" layoutY="605.0" mnemonicParsing="false" text="Export" />
+    <Button fx:id="cancelButton" layoutX="643.0" layoutY="605.0" mnemonicParsing="false" text="Cancel" />
+    <Button id="city" fx:id="backInfo" layoutX="14.0" layoutY="602.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Back" />
+  </children>
+</Pane>

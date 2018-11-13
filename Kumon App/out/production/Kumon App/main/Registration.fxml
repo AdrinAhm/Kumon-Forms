@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.FXMLDocumentController">
+  <children>
+    <Label layoutX="188.0" layoutY="39.0" text="Registration">
+      <font>
+        <Font name="System Bold" size="39.0" />
+      </font>
+    </Label>
+    <Button fx:id="studentApp" layoutX="176.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Student Application/Transfer Form" />
+    <Button fx:id="Setting" layoutX="230.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Parents to Notice" />
+    <Button fx:id="Re" layoutX="501.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Back" />
+  </children>
+</Pane>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<Pane id="scrollPane" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="969.0" prefWidth="780.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.FXMLDocumentController">
+  <children>
+    <ScrollPane id="scrollPane" layoutX="-2.0" layoutY="1.0" prefHeight="968.0" prefWidth="780.0">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1300.0" prefWidth="771.0">
+          <children>
+            <TabPane layoutX="0.0" layoutY="67.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1413.0" prefWidth="771.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Student Info">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="771.0">
+                      <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="STUDENT INFORMATION">
+                          <font>
+                            <Font name="System Bold" size="20.0" fx:id="x3" />
+                          </font>
+                        </Label>
+                        <Line endX="670.0" layoutX="101.0" layoutY="115.0" startX="-100.0" />
+                        <Line endX="670.0" startX="-100.0" strokeWidth="1.5" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="190.0" />
+                        <Label layoutX="14.0" layoutY="55.0" text="STUDENT'S NAME" />
+                        <TextField fx:id="studentLast" layoutX="16.0" layoutY="76.0" prefHeight="31.0" prefWidth="308.0" promptText="Last" />
+                        <TextField fx:id="studentFirst" layoutX="337.0" layoutY="76.0" prefHeight="31.0" prefWidth="230.0" promptText="First" />
+                        <Line layoutX="107.0" startY="75.0" AnchorPane.topAnchor="113.5" />
+                        <Label layoutX="116.0" layoutY="126.0" text="SCHOOL YEAR" />
+                        <TextField id="schoolGrade" fx:id="schoolYear" layoutX="120.0" layoutY="149.0" prefHeight="31.0" prefWidth="102.0" />
+                        <Line layoutX="237.0" layoutY="116.0" startY="75.0" />
+                        <Label layoutX="239.0" layoutY="116.0" text="GRADE" />
+                        <Label layoutX="14.0" layoutY="202.0" text="HOME ADDRESS" />
+                        <TextField fx:id="address" layoutX="14.0" layoutY="223.0" prefHeight="31.0" prefWidth="402.0" promptText="Street Address" />
+                        <TextField fx:id="apt" layoutX="421.0" layoutY="223.0" prefHeight="31.0" prefWidth="133.0" promptText="Apt. or Suite No." />
+                        <TextField fx:id="homeTelephone" layoutX="558.0" layoutY="223.0" prefHeight="31.0" prefWidth="158.0" promptText="Home Telephone" />
+                        <TextField fx:id="city" layoutX="13.0" layoutY="262.0" prefHeight="31.0" prefWidth="219.0" promptText="City" />
+                        <TextField fx:id="state" layoutX="241.0" layoutY="262.0" prefHeight="31.0" prefWidth="93.0" promptText="State/Prov." />
+                        <TextField fx:id="zip" layoutX="341.0" layoutY="262.0" prefHeight="31.0" prefWidth="124.0" promptText="Zip/Postal Code" />
+                        <TextField fx:id="email" layoutX="474.0" layoutY="262.0" prefHeight="31.0" prefWidth="244.0" promptText="E-mail" />
+                        <Label layoutX="14.0" layoutY="299.0" text="NAME OF SCHOOL" />
+                        <TextField fx:id="schoolName" layoutX="13.0" layoutY="320.0" prefHeight="31.0" prefWidth="707.0" />
+                        <Line endX="670.0" layoutX="106.0" layoutY="364.0" startX="-110.0" strokeWidth="3.0" />
+                        <Label layoutX="14.0" layoutY="372.0" text="PARENT/GUARDIAN'S NAME" />
+                        <TextField id="parentLast" fx:id="parentLastOne" layoutX="194.0" layoutY="399.0" prefHeight="31.0" prefWidth="279.0" promptText="Lastname" />
+                        <TextField id="paretFirst" fx:id="parentFirstOne" layoutX="483.0" layoutY="399.0" prefHeight="31.0" prefWidth="270.0" promptText="Firstname" />
+                        <TextField fx:id="aptOne" layoutX="420.0" layoutY="448.0" prefHeight="31.0" prefWidth="133.0" promptText="Apt. or Suite No." />
+                        <TextField fx:id="addressOne" layoutX="14.0" layoutY="448.0" prefHeight="31.0" prefWidth="402.0" promptText="Street Address (if different from above)" />
+                        <TextField fx:id="zipOne" layoutX="342.0" layoutY="486.0" prefHeight="31.0" prefWidth="124.0" promptText="Zip/Postal Code" />
+                        <TextField fx:id="cityOne" layoutX="14.0" layoutY="486.0" prefHeight="31.0" prefWidth="219.0" promptText="City" />
+                        <TextField fx:id="mobileOne" layoutX="475.0" layoutY="486.0" prefHeight="31.0" prefWidth="277.0" promptText="Mobile Phone" />
+                        <TextField fx:id="stateOne" layoutX="242.0" layoutY="486.0" prefHeight="31.0" prefWidth="93.0" promptText="State/Prov." />
+                        <TextField fx:id="emailOne" layoutX="14.0" layoutY="525.0" prefHeight="31.0" prefWidth="413.0" promptText="E-mail" />
+                        <TextField fx:id="homeTelephoneOne" layoutX="558.0" layoutY="448.0" prefHeight="31.0" prefWidth="192.0" promptText="Home Telephone" />
+                        <Line endX="670.0" layoutX="100.0" layoutY="585.0" startX="-100.0" strokeWidth="1.5" />
+                        <TextField fx:id="mobileTwo" layoutX="478.0" layoutY="706.0" prefHeight="31.0" prefWidth="277.0" promptText="Mobile Phone" />
+                        <TextField fx:id="aptTwo" layoutX="424.0" layoutY="668.0" prefHeight="31.0" prefWidth="133.0" promptText="Apt. or Suite No." />
+                        <Label layoutX="17.0" layoutY="592.0" text="PARENT/GUARDIAN'S NAME" />
+                        <TextField fx:id="emailTwo" layoutX="17.0" layoutY="745.0" prefHeight="31.0" prefWidth="413.0" promptText="E-mail" />
+                        <TextField fx:id="zipTwo" layoutX="344.0" layoutY="706.0" prefHeight="31.0" prefWidth="124.0" promptText="Zip/Postal Code" />
+                        <TextField fx:id="parentLastTwo" layoutX="197.0" layoutY="619.0" prefHeight="31.0" prefWidth="279.0" promptText="Lastname" />
+                        <TextField fx:id="stateTwo" layoutX="245.0" layoutY="706.0" prefHeight="31.0" prefWidth="93.0" promptText="State/Prov." />
+                        <TextField fx:id="cityTwo" layoutX="18.0" layoutY="706.0" prefHeight="31.0" prefWidth="219.0" promptText="City" />
+                        <TextField id="paretFirstTwo" fx:id="parentFirstTwo" layoutX="486.0" layoutY="619.0" prefHeight="31.0" prefWidth="270.0" promptText="Firstname" />
+                        <TextField fx:id="homeTelephoneTwo" layoutX="561.0" layoutY="668.0" prefHeight="31.0" prefWidth="192.0" promptText="Home Telephone" />
+                        <TextField fx:id="addressTwo" layoutX="16.0" layoutY="668.0" prefHeight="31.0" prefWidth="402.0" promptText="Street Address (if different from above)" />
+                        <Line endX="670.0" layoutY="807.0" startX="-100.0" strokeWidth="1.5" AnchorPane.rightAnchor="0.0" />
+                        <Label layoutX="18.0" layoutY="821.0" text="IN CASE OF EMERGENCY" />
+                        <Label layoutX="95.0" layoutY="861.0" prefWidth="42.0" text="Name" />
+                        <TextField fx:id="EmergencyName" layoutX="21.0" layoutY="893.0" />
+                        <Line endX="670.0" layoutY="978.0" startX="-100.0" AnchorPane.leftAnchor="0.0" />
+                        <Label layoutX="18.0" layoutY="991.0" text="HOW DID YOU LEARN ABOUT KUMON" />
+                        <TextField fx:id="knowOtherDescription" layoutX="197.0" layoutY="1119.0" prefHeight="31.0" prefWidth="211.0" promptText="Explanation" />
+                        <Line endY="180.0" layoutX="482.0" layoutY="976.0" startY="3.0" />
+                        <Line endX="670.0" layoutX="97.0" layoutY="1156.0" startX="-100.0" />
+                        <Label layoutX="490.0" layoutY="991.0" text="WHY DID YOU ENROLL HERE?" />
+                        <TextField fx:id="reasonOtherDescription" layoutX="569.0" layoutY="1119.0" promptText="Please Explain Here" />
+                        <RadioButton fx:id="male" layoutX="14.0" layoutY="126.0" mnemonicParsing="false" onAction="#radioButtons" text="Male" />
+                        <RadioButton fx:id="female" layoutX="14.0" layoutY="157.0" mnemonicParsing="false" onAction="#radioButtons" text="Female" />
+                        <RadioButton fx:id="fatherOne" layoutX="19.0" layoutY="393.0" mnemonicParsing="false" onAction="#radioButtons" text="Father" />
+                        <RadioButton fx:id="motherOne" layoutX="98.0" layoutY="393.0" mnemonicParsing="false" onAction="#radioButtons" text="Mother" />
+                        <RadioButton fx:id="otherOne" layoutX="19.0" layoutY="420.0" mnemonicParsing="false" onAction="#radioButtons" text="Other" />
+                        <RadioButton fx:id="emailnotOne" layoutX="442.0" layoutY="530.0" mnemonicParsing="false" onAction="#radioButtons" text="I do not have an E-mail" />
+                        <RadioButton id="emailOne" fx:id="emailChooseNotOne" layoutX="442.0" layoutY="556.0" mnemonicParsing="false" onAction="#radioButtons" text="I choose not to provide my E-mail" />
+                        <RadioButton fx:id="fatherTwo" layoutX="18.0" layoutY="612.0" mnemonicParsing="false" onAction="#radioButtons" text="Father" />
+                        <RadioButton fx:id="otherTwo" layoutX="18.0" layoutY="640.0" mnemonicParsing="false" onAction="#radioButtons" text="Other" />
+                        <RadioButton fx:id="motherTwo" layoutX="98.0" layoutY="612.0" mnemonicParsing="false" onAction="#radioButtons" text="Mother" />
+                        <RadioButton fx:id="emailChooseNotTwo" layoutX="449.0" layoutY="779.0" mnemonicParsing="false" onAction="#radioButtons" text="I choose not to provide my E-mail" />
+                        <RadioButton fx:id="emailnotTwo" layoutX="449.0" layoutY="753.0" mnemonicParsing="false" onAction="#radioButtons" text="I do not have an E-mail" />
+                        <RadioButton fx:id="review" layoutX="493.0" layoutY="1015.0" mnemonicParsing="false" onAction="#radioButtons" text="Review" />
+                        <RadioButton fx:id="enrichment" layoutX="493.0" layoutY="1048.0" mnemonicParsing="false" onAction="#radioButtons" text="Enrichment" />
+                        <RadioButton fx:id="sat" layoutX="493.0" layoutY="1083.0" mnemonicParsing="false" onAction="#radioButtons" text="Prepare for SAT/ACT" />
+                        <RadioButton fx:id="reasonOther" layoutX="492.0" layoutY="1117.0" mnemonicParsing="false" onAction="#radioButtons" text="Other:" />
+                        <RadioButton fx:id="tv" layoutX="22.0" layoutY="1028.0" mnemonicParsing="false" onAction="#radioButtons" text="TV" />
+                        <RadioButton fx:id="newspaper" layoutX="21.0" layoutY="1060.0" mnemonicParsing="false" onAction="#radioButtons" text="Newspaper" />
+                        <RadioButton fx:id="friend" layoutX="19.0" layoutY="1090.0" mnemonicParsing="false" onAction="#radioButtons" text="Friends/Relatives" />
+                        <RadioButton fx:id="knowOther" layoutX="19.0" layoutY="1124.0" mnemonicParsing="false" onAction="#radioButtons" text="Other, Please explain:" />
+                        <RadioButton fx:id="radio" layoutX="171.0" layoutY="1029.0" mnemonicParsing="false" onAction="#radioButtons" text="Radio" />
+                        <RadioButton fx:id="educator" layoutX="171.0" layoutY="1090.0" mnemonicParsing="false" onAction="#radioButtons" text="Educator" />
+                        <RadioButton fx:id="yellowpages" layoutX="170.0" layoutY="1060.0" mnemonicParsing="false" onAction="#radioButtons" text="Yellow Pages" />
+                        <RadioButton fx:id="web" layoutX="295.0" layoutY="1060.0" mnemonicParsing="false" onAction="#radioButtons" text="Web Search" />
+                        <RadioButton fx:id="kumonweb" layoutX="295.0" layoutY="1090.0" mnemonicParsing="false" onAction="#radioButtons" text="EducatorKumon.com" />
+                        <RadioButton fx:id="magazine" layoutX="295.0" layoutY="1029.0" mnemonicParsing="false" onAction="#radioButtons" text="Magazine" />
+                        <RadioButton fx:id="pk_3" layoutX="247.0" layoutY="142.0" mnemonicParsing="false" onAction="#radioButtons" text="PK-3" />
+                        <RadioButton fx:id="pk_2" layoutX="316.0" layoutY="142.0" mnemonicParsing="false" onAction="#radioButtons" text="PK-2" />
+                        <RadioButton fx:id="pk_1" layoutX="384.0" layoutY="141.0" mnemonicParsing="false" onAction="#radioButtons" text="PK-1" />
+                        <RadioButton fx:id="k" layoutX="449.0" layoutY="141.0" mnemonicParsing="false" onAction="#radioButtons" text="K" />
+                        <RadioButton fx:id="one" layoutX="499.0" layoutY="141.0" mnemonicParsing="false" onAction="#radioButtons" text="1" />
+                        <RadioButton fx:id="two" layoutX="545.0" layoutY="141.0" mnemonicParsing="false" onAction="#radioButtons" text="2" />
+                        <RadioButton fx:id="three" layoutX="593.0" layoutY="141.0" mnemonicParsing="false" onAction="#radioButtons" text="3" />
+                        <RadioButton fx:id="four" layoutX="645.0" layoutY="141.0" mnemonicParsing="false" onAction="#radioButtons" text="4" />
+                        <RadioButton fx:id="five" layoutX="247.0" layoutY="167.0" mnemonicParsing="false" onAction="#radioButtons" text="5" />
+                        <RadioButton fx:id="six" layoutX="318.0" layoutY="167.0" mnemonicParsing="false" onAction="#radioButtons" text="6" />
+                        <RadioButton fx:id="seven" layoutX="384.0" layoutY="167.0" mnemonicParsing="false" onAction="#radioButtons" text="7" />
+                        <RadioButton fx:id="eight" layoutX="449.0" layoutY="167.0" mnemonicParsing="false" onAction="#radioButtons" text="8" />
+                        <RadioButton fx:id="nine" layoutX="499.0" layoutY="167.0" mnemonicParsing="false" onAction="#radioButtons" text="9" />
+                        <RadioButton fx:id="ten" layoutX="544.0" layoutY="167.0" mnemonicParsing="false" onAction="#radioButtons" text="10" />
+                        <RadioButton fx:id="eleven" layoutX="593.0" layoutY="167.0" mnemonicParsing="false" onAction="#radioButtons" text="11" />
+                        <RadioButton fx:id="gradeOther" layoutX="646.0" layoutY="167.0" mnemonicParsing="false" onAction="#radioButtons" text="Other" />
+                        <TextField fx:id="EmergencyTelephone" layoutX="213.0" layoutY="893.0" />
+                        <Label layoutX="261.0" layoutY="861.0" prefWidth="73.0" text="Telephone" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Bank App">
+                  <content>
+                    <AnchorPane id="Content" maxHeight="-1.0" maxWidth="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="771.0">
+                      <children>
+                        <Label layoutX="241.0" layoutY="36.0" text="Bank Transfer Authorization Form">
+                          <font>
+                            <Font name="System Bold" size="18.0" />
+                          </font>
+                        </Label>
+                        <Label layoutX="112.0" layoutY="88.0" text="I authorize Ingenious Learner to electronically debit my bank accout according" />
+                        <Label layoutX="112.0" layoutY="109.0" text="to the terms outline below. I acknowledge that electronic debits against my account " />
+                        <Label layoutX="112.0" layoutY="130.0" text="must comply with United States law." />
+                        <Label layoutX="108.0" layoutY="218.0" text="Terms of Billing:">
+                          <font>
+                            <Font name="System Bold" size="15.0" fx:id="x1" />
+                          </font>
+                        </Label>
+                        <TextField fx:id="opt1Day" layoutX="223.0" layoutY="252.0" prefHeight="31.0" prefWidth="88.0" promptText="mm/dd/yy" />
+                        <Label layoutX="312.0" layoutY="257.0" text="for the amount of $" />
+                        <TextField fx:id="opt1Amount" layoutX="446.0" layoutY="252.0" prefHeight="31.0" prefWidth="130.0" />
+                        <TextField fx:id="opt2Day1" layoutX="212.0" layoutY="294.0" prefHeight="31.0" prefWidth="88.0" promptText="mm/dd/yy" />
+                        <Label layoutX="304.0" layoutY="299.0" text="and on the" />
+                        <TextField fx:id="opt2DayOf" layoutX="380.0" layoutY="294.0" prefHeight="31.0" prefWidth="137.0" promptText="day of the month" />
+                        <Label layoutX="516.0" layoutY="299.0" text="of each month through" />
+                        <TextField id="opt2Amount" fx:id="opt2Day2" layoutX="136.0" layoutY="331.0" prefHeight="31.0" prefWidth="88.0" promptText="mm/dd/yy" />
+                        <Label layoutX="231.0" layoutY="336.0" text="for the amount of $" />
+                        <TextField fx:id="opt2Amount" layoutX="365.0" layoutY="331.0" prefHeight="31.0" prefWidth="130.0" />
+                        <TextField fx:id="opt3Day" layoutX="212.0" layoutY="376.0" prefHeight="31.0" prefWidth="88.0" promptText="mm/dd/yy" />
+                        <Label layoutX="309.0" layoutY="381.0" text="for the amount of $" />
+                        <TextField fx:id="opt3Amount" layoutX="443.0" layoutY="376.0" prefHeight="31.0" prefWidth="130.0" />
+                        <Label layoutX="144.0" layoutY="416.0" text="and accordingly thereafter per the terms in invoice(s)." />
+                        <TextField layoutX="480.0" layoutY="588.0" prefHeight="31.0" prefWidth="199.0" promptText="Customer Name" />
+                        <Label font="$x1" layoutX="112.0" layoutY="459.0" text="Customer bank account information:" />
+                        <TextField fx:id="rountingNo" layoutX="112.0" layoutY="493.0" prefHeight="31.0" prefWidth="253.0" promptText="Routing Number" />
+                        <TextField fx:id="accountNo" layoutX="377.0" layoutY="493.0" prefHeight="31.0" prefWidth="260.0" promptText="Account Number" />
+                        <Label layoutX="115.0" layoutY="546.0" text="Account type:" />
+                        <Label layoutX="115.0" layoutY="593.0" text="This payment authorization is to remain in effect until I," />
+                        <Label layoutX="113.0" layoutY="647.0" text="the business and receivig financial institution to have a reasonable opportunity to act " />
+                        <Label layoutX="111.0" layoutY="676.0" text="on it." />
+                        <TextField layoutX="530.0" layoutY="719.0" prefHeight="31.0" prefWidth="199.0" promptText="Customer Name" />
+                        <TextField layoutX="556.0" layoutY="782.0" prefHeight="31.0" prefWidth="137.0" promptText="Date" />
+                        <RadioButton fx:id="bankOpt1" layoutX="110.0" layoutY="258.0" mnemonicParsing="false" onAction="#radioButtons" text="One time on" />
+                        <RadioButton fx:id="bankOpt2" layoutX="111.0" layoutY="300.0" mnemonicParsing="false" onAction="#radioButtons" text="Starting on" />
+                        <RadioButton fx:id="bankOpt3" layoutX="112.0" layoutY="382.0" mnemonicParsing="false" onAction="#radioButtons" text="Starting on" />
+                        <Label layoutX="113.0" layoutY="619.0" text="notify Ingenious Learner of its cancellation by giving written notice in enough time for" />
+                        <RadioButton fx:id="checking" layoutX="219.0" layoutY="546.0" mnemonicParsing="false" onAction="#radioButtons" text="Checking" />
+                        <RadioButton fx:id="saving" layoutX="319.0" layoutY="546.0" mnemonicParsing="false" onAction="#radioButtons" text="Saving" />
+                        <RadioButton fx:id="consumer" layoutX="400.0" layoutY="546.0" mnemonicParsing="false" onAction="#radioButtons" text="Consumer" />
+                        <RadioButton fx:id="business" layoutX="508.0" layoutY="546.0" mnemonicParsing="false" onAction="#radioButtons" text="Business" />
+                        <Button fx:id="submitData" layoutX="608.0" layoutY="850.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Submit" />
+                        <Label fx:id="errorLabel" font="$x3" layoutX="68.0" layoutY="810.0" prefWidth="472.0" text="Please fill in all the boxes in order to continue" textFill="#ff3d00" visible="false" />
+                        <Label layoutX="168.0" layoutY="699.0" text="Parent/Guardian's Signature" />
+                        <WebView fx:id="webview" layoutX="32.0" layoutY="720.0" prefHeight="187.0" prefWidth="442.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Enrollment Questionnaire">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1374.0" prefWidth="771.0">
+                      <children>
+                        <Label layoutX="39.0" layoutY="48.0" text="Student's Name" />
+                        <Label layoutX="39.0" layoutY="99.0" text="Parent's Name" />
+                        <Label layoutX="39.0" layoutY="154.0" text="School Name" />
+                        <Label layoutX="39.0" layoutY="205.0" text="Grade" />
+                        <Label layoutX="291.0" layoutY="205.0" text="Date" />
+                        <TextField layoutX="192.0" layoutY="43.0" prefHeight="31.0" prefWidth="481.0" />
+                        <TextField layoutX="192.0" layoutY="94.0" prefHeight="31.0" prefWidth="481.0" />
+                        <TextField layoutX="192.0" layoutY="149.0" prefHeight="31.0" prefWidth="481.0" />
+                        <TextField layoutX="84.0" layoutY="200.0" />
+                        <TextField layoutX="339.0" layoutY="200.0" />
+                        <Label layoutX="89.0" layoutY="279.0" text="In Which activities does your child participate outside of achool? Please specify the actvity" />
+                        <Label layoutX="89.0" layoutY="300.0" text="(Example: Music lessons, dance, martial arts)" />
+                        <Label layoutX="343.0" layoutY="347.0" text="(MTWTFSS)" />
+                        <Label layoutX="343.0" layoutY="385.0" text="(MTWTFSS)" />
+                        <Label layoutX="343.0" layoutY="423.0" text="(MTWTFSS)" />
+                        <Label layoutX="343.0" layoutY="498.0" text="(MTWTFSS)" />
+                        <Label layoutX="343.0" layoutY="459.0" text="(MTWTFSS)" />
+                        <Label layoutX="343.0" layoutY="537.0" text="(MTWTFSS)" />
+                        <Label layoutX="343.0" layoutY="575.0" text="(MTWTFSS)" />
+                        <TextField layoutX="104.0" layoutY="344.0" />
+                        <TextField layoutX="104.0" layoutY="382.0" />
+                        <TextField layoutX="104.0" layoutY="420.0" />
+                        <TextField layoutX="104.0" layoutY="456.0" />
+                        <TextField layoutX="104.0" layoutY="495.0" />
+                        <TextField layoutX="104.0" layoutY="534.0" />
+                        <TextField layoutX="104.0" layoutY="572.0" />
+                        <Label font="$x1" layoutX="31.0" layoutY="680.0" text="1.How does your child currently perform in  School?" />
+                        <CheckBox layoutX="31.0" layoutY="726.0" mnemonicParsing="false" text="Above average grades" />
+                        <CheckBox layoutX="31.0" layoutY="772.0" mnemonicParsing="false" text="Average grades" />
+                        <CheckBox layoutX="295.0" layoutY="726.0" mnemonicParsing="false" text="Below average grades" />
+                        <CheckBox layoutX="294.0" layoutY="772.0" mnemonicParsing="false" text="N/A" />
+                        <Label font="$x1" layoutX="31.0" layoutY="823.0" text="2. What is his/her favorite subject" />
+                        <TextField layoutX="35.0" layoutY="868.0" prefHeight="31.0" prefWidth="700.0" />
+                        <Label font="$x1" layoutX="32.0" layoutY="911.0" text="3. What are  your child's current hopes/ dreams" />
+                        <TextField layoutX="33.0" layoutY="958.0" prefHeight="31.0" prefWidth="700.0" />
+                        <Label font="$x1" layoutX="28.0" layoutY="1003.0" text="4. Is your child confident in his/her academic performance?" />
+                        <CheckBox layoutX="37.0" layoutY="1047.0" mnemonicParsing="false" text="Yes" />
+                        <CheckBox layoutX="37.0" layoutY="1080.0" mnemonicParsing="false" text="No" />
+                        <CheckBox layoutX="37.0" layoutY="1113.0" mnemonicParsing="false" text="Neutral" />
+                        <Label font="$x1" layoutX="26.0" layoutY="1148.0" text="5. When does your child do his/her school homework?" />
+                        <CheckBox layoutX="42.0" layoutY="1177.0" mnemonicParsing="false" text="Morning (before school)" />
+                        <CheckBox layoutX="41.0" layoutY="1207.0" mnemonicParsing="false" text="Afternoon (after school)" />
+                        <CheckBox layoutX="41.0" layoutY="1239.0" mnemonicParsing="false" text="Evening (after dinner)" />
+                        <Label layoutX="41.0" layoutY="1269.0" text="Please explain:" />
+                        <TextField layoutX="145.0" layoutY="1264.0" prefHeight="31.0" prefWidth="600.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Instructor's">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <CheckBox layoutX="158.0" layoutY="60.0" mnemonicParsing="false" text="NEW" />
+                        <CheckBox layoutX="232.0" layoutY="60.0" mnemonicParsing="false" text="CHANGE OF INFO" />
+                        <CheckBox layoutX="398.0" layoutY="60.0" mnemonicParsing="false" text="INCOMING TRANSFER" />
+                        <Label layoutX="159.0" layoutY="99.0" text="CENTER ID" />
+                        <TextField layoutX="159.0" layoutY="120.0" />
+                        <TextField layoutX="159.0" layoutY="259.0" prefHeight="31.0" prefWidth="37.0" />
+                        <TextField layoutX="202.0" layoutY="259.0" prefHeight="31.0" prefWidth="37.0" />
+                        <TextField layoutX="245.0" layoutY="259.0" prefHeight="31.0" prefWidth="74.0" />
+                        <Label layoutX="158.0" layoutY="240.0" text="Month">
+                          <font>
+                            <Font size="13.0" fx:id="x2" />
+                          </font>
+                        </Label>
+                        <Label font="$x2" layoutX="209.0" layoutY="240.0" text="Day" />
+                        <Label font="$x2" layoutX="269.0" layoutY="240.0" text="Year" />
+                        <Label font="$x1" layoutX="175.0" layoutY="207.0" text="ENROLLMENT D" />
+                        <Label font="$x1" layoutX="428.0" layoutY="125.0" text="SUBJECT ENROLLING" />
+                        <Label font="$x3" layoutX="328.0" layoutY="14.0" text="Enrollment" />
+                        <CheckBox layoutX="428.0" layoutY="151.0" mnemonicParsing="false" text="Math" />
+                        <CheckBox layoutX="428.0" layoutY="180.0" mnemonicParsing="false" text="Reading" />
+                        <CheckBox layoutX="428.0" layoutY="207.0" mnemonicParsing="false" text="Japanese" />
+                        <Label font="$x1" layoutX="428.0" layoutY="239.0" text="Grade Advance Month" />
+                        <CheckBox layoutX="428.0" layoutY="264.0" mnemonicParsing="false" text="July" />
+                        <CheckBox layoutX="491.0" layoutY="264.0" mnemonicParsing="false" text="Aug." />
+                        <CheckBox layoutX="560.0" layoutY="264.0" mnemonicParsing="false" text="Spt." />
+                        <Line endX="670.0" layoutY="357.0" startX="-100.0" AnchorPane.leftAnchor="-5.5" AnchorPane.rightAnchor="5.5" />
+                        <Button layoutX="638.0" layoutY="305.0" mnemonicParsing="false" text="Submit" />
+                        <Label font="$x3" layoutX="311.0" layoutY="375.0" text="Outgoing Transfer" />
+                        <Label layoutX="154.0" layoutY="442.0" text="Student ID" />
+                        <Label layoutX="558.0" layoutY="442.0" text="Instructor Signature" />
+                        <Label layoutX="598.0" layoutY="513.0" text="Date" />
+                        <Label layoutX="544.0" layoutY="591.0" text="Date Transferred Out" />
+                        <Label layoutX="44.0" layoutY="502.0" text="Subject" />
+                        <Label layoutX="164.0" layoutY="502.0" text="Starting point" />
+                        <Label layoutX="314.0" layoutY="502.0" text="Last Level" />
+                        <TextField layoutX="19.0" layoutY="544.0" prefHeight="31.0" prefWidth="99.0" />
+                        <TextField layoutX="19.0" layoutY="586.0" prefHeight="31.0" prefWidth="99.0" />
+                        <TextField layoutX="153.0" layoutY="544.0" prefHeight="31.0" prefWidth="99.0" />
+                        <TextField layoutX="153.0" layoutY="586.0" prefHeight="31.0" prefWidth="99.0" />
+                        <TextField layoutX="297.0" layoutY="544.0" prefHeight="31.0" prefWidth="99.0" />
+                        <TextField layoutX="297.0" layoutY="586.0" prefHeight="31.0" prefWidth="99.0" />
+                        <TextField layoutX="521.0" layoutY="544.0" />
+                        <TextField layoutX="521.0" layoutY="617.0" />
+                        <TextField layoutX="521.0" layoutY="471.0" />
+                        <Button layoutX="641.0" layoutY="703.0" mnemonicParsing="false" text="Submit" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <Button fx:id="appBack" layoutX="689.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Back" />
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+  </children>
+</Pane>
